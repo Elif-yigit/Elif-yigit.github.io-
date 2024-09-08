@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOKTORLARIMIZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #061c59;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px; 
+        }
+
+        .topnav a {
+            color: rgb(247, 231, 231);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 60px; 
+        }
+
+        .topnav a:hover {
+            background-color: #a5c1e6;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #3c5393;
+            color: white;
+        }
+
+        .topnav .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+        .topnav input[type=text] {
+            padding: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 8px;
+            height: 34px; 
+            width: 200px; 
+            box-sizing: border-box; 
+        }
+
+        .topnav .search-container button {
+            padding: 8px 12px;
+            background: #3c86ec;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 34px; 
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+        }
+
+        .gallery:hover {
+            border: 1px solid #777;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #dcebf2;
+            padding: 20px;
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="#DOKTORLARIMIZ">DOKTORLARIMIZ</a>
+    <a href="index .html">ANASAYFA</a>
+    <a href="tibbirim.html">TIBBİ BİRİMLERİMİZ</a>
+    <a href="iletisim.html">İLETİŞİM</a>
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="ARA.." name="search">
+            <button type="submit">ARA</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <br>
+    <center><h1><em>DOKTORLARIMIZ</em></h1></center>
+    <br>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="resim/acil-servis.jpg">
+                <img src="resim/acil-servis.jpg" alt="acil-servis">
+            </a>
+            <div class="desc"><a href="index.html">Acil Servis</a></div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="resim/beyin-sinir.jpg">
+                <img src="resim/beyin-sinir.jpg" alt="beyin-sinir">
+            </a>
+            <div class="desc"><a href="index.html">Beyin ve Sinir Cerrahisi</a></div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="resim/cocuk-cerrahi.jpg">
+                <img src="resim/cocuk-cerrahi.jpg" alt="cocuk-cerrahi">
+            </a>
+            <div class="desc"><a href="index.html">Çocuk Kalp ve Damar Cerrahisi</a></div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="resim/kalp-damar.jpg">
+                <img src="resim/kalp-damar.jpg" alt="kalp-damar">
+            </a>
+            <div class="desc"><a href="index.html">Kalp Damar Cerrahisi</a></div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+<center><h2>Randevu Formu</h2></center>
+<center><p><font color="white">Lütfen gerekli bilgileri girerek randevu talebinizi oluşturun.</font></p></center>
+
+<div class="container">
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="adsoyad">AD SOYAD</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınız..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="telefon">TELEFON</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="telefon" name="telefon" placeholder="90535..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="bolum">BÖLÜM SEÇİMİNİZ</label>
+            </div>
+            <div class="col-75">
+                <select id="bolum" name="bolum">
+                    <option value="kalp">Kalp Damar Cerrahisi</option>
+                    <option value="kadin">Kadın Hastalıkları ve Doğum</option>
+                    <option value="cocuk">Çocuk Cerrahisi</option>
+                    <option value="orto">Ortopedi ve Travmatoloji</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="konu">KONU</label>
+            </div>
+            <div class="col-75">
+                <textarea id="konu" name="konu" placeholder="LOREM.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="GÖNDER">
+        </div>
+    </form>
+</div>
+
+<br><br><br><br>
+<footer>
+    <p>HAZIRLAYAN: ELİF YİĞİT<br>
+    <a href="mailto:elifygit@outlook.com">elifygit@outlook.com</a></p>
+</footer>
+
+</body>
+</html>

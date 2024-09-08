@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>TIBBİ BİRİM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #061c59;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px; 
+        }
+
+        .topnav a {
+            color: rgb(247, 231, 231);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 60px; 
+        }
+
+        .topnav a:hover {
+            background-color: #a5c1e6;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #3c5393;
+            color: white;
+        }
+
+        .topnav .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+        .topnav input[type=text] {
+            padding: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 8px;
+            height: 34px; 
+            width: 200px; 
+            box-sizing: border-box; 
+        }
+
+        .topnav .search-container button {
+            padding: 8px 12px;
+            background: #3c86ec;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 34px; 
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 20px;
+            margin: 0;
+            width: 300px;
+            background-color: #6999b6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .list li {
+            padding: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+        }
+
+        .additional-list {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        h2, h1 {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="#tibbirim">TIBBİ BİRİMLERİMİZ</a>
+    <a href="index .html">ANASAYFA</a>
+    <a href="doktor.html">DOKTORLARIMIZ</a>
+    <a href="iletisim.html">İLETİŞİM</a>
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="ARA.." name="search">
+            <button type="submit">ARA</button>
+        </form>
+    </div>
+</div>
+
+<center>
+    <h1>TIBBİ BİRİMLERİMİZ</h1>
+</center>
+<br>
+<br>
+<div class="container">
+    <div>
+        <h2>A</h2>
+        <ul class="list">
+            <li><a href="index.html">Acil Servis</a></li>
+            <li><a href="index.html">Ağız ve Diş Sağlığı</a></li>
+            <li><a href="index.html">Alerji ve İmmünoloji</a></li>
+            <li><a href="index.html">Algoloji (Ağrı Polikliniği)</a></li>
+            <li><a href="index.html">Anestezi ve Reanimasyon</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>B</h2>
+        <ul class="list">
+            <li><a href="index.html">Beslenme ve Diyet</a></li>
+            <li><a href="index.html">Beyin ve Sinir Cerrahisi</a></li>
+            <li><a href="index.html">Biyokimya Laboratuvarı</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Ç</h2>
+        <ul class="list">
+            <li><a href="index.html">Çocuk Alerjisi</a></li>
+            <li><a href="index.html">Çocuk Cerrahisi</a></li>
+            <li><a href="index.html">Çocuk Kardiyovasküler Cerrahisi</a></li>
+            <li><a href="index.html">Çocuk Nefrolojisi</a></li>
+            <li><a href="index.html">Çocuk Psikolojisi</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="additional-list">
+    <div>
+        <h2>K</h2>
+        <ul class="list">
+            <li><a href="index.html">Kadın Hastalıkları ve Doğum</a></li>
+            <li><a href="index.html">Kalp ve Damar Cerrahisi</a></li>
+            <li><a href="index.html">Kulak Burun Boğaz</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>O</h2>
+        <ul class="list">
+            <li><a href="index.html">Ortopedi ve Travmatoloji</a></li>
+            <li><a href="index.html">Ortopedik Onkoloji</a></li>
+            <li><a href="index.html">Omurga Cerrahisi</a></li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br><br><br><br>
+<footer>
+  <p>HAZIRLAYAN: ELİF YİĞİT<br>
+  <a href="mailto:elifygit@outlook.com">elifygit@outlook.com</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #061c59;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px; 
+        }
+
+        .topnav a {
+            color: rgb(247, 231, 231);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 60px; 
+        }
+
+        .topnav a:hover {
+            background-color: #a5c1e6;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #3c5393;
+            color: white;
+        }
+
+        .topnav .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+        .topnav input[type=text] {
+            padding: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 8px;
+            height: 34px; 
+            width: 200px; 
+            box-sizing: border-box; 
+        }
+
+        .topnav .search-container button {
+            padding: 8px 12px;
+            background: #3c86ec;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 34px; 
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        h2 {
+            color: #1b1b71; 
+            margin-top: 105px;
+
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;       
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #061c59;
+            text-align: center;
+        }
+
+        p {
+            margin: 30px 0;
+              text-align: center;
+         }
+        
+
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .address {
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">ANASAYFA</a>
+    <a href="tibbi-birimlerimiz.html">TIBBİ BİRİMLERİMİZ</a>
+    <a href="doktor.html">DOKTORLARIMIZ</a>
+    <a class="active" href="#iletisim">İLETİŞİM</a>
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="ARA.." name="search">
+            <button type="submit">ARA</button>
+        </form>
+    </div>
+</div>
+
+<div class="address">
+    <h2>SAĞLIK HASTANELERİ GENEL MÜDÜRLÜK</h2>
+    <hr/>
+    <p><span class="label">Adres:</span> Kızıkbakkalköy, Burası Tower, Gezilen Cd. No:852</p>
+    <p><span class="label">Telefon:</span> 0212 000 00 00</p>
+    <p><span class="label">Fax:</span> 0212 000 11 11</p>
+    <p><span class="label">E-posta:</span> <a href="mailto:saglik@gmail.com">saglik@gmail.com</a></p>
+</div>
+
+<br>
+
+<div class="address">
+    <h2>SAĞLIK HASTANELERİ KADIKÖY</h2>
+    <hr/>
+    <p><span class="label">Adres:</span> Kadıköy, Burası Tower, Gezilen Cd. No:852</p>
+    <p><span class="label">Telefon:</span> 0216 000 00 00</p>
+    <p><span class="label">Fax:</span> 0216 000 11 11</p>
+    <p><span class="label">E-posta:</span> <a href="mailto:saglik@gmail.com">saglik@gmail.com</a></p>
+</div>
+
+<br>
+
+<footer>
+    <p>HAZIRLAYAN: ELİF YİĞİT<br>
+    <a href="mailto:elifygit@outlook.com">elifygit@outlook.com</a></p>
+</footer>
+
+</body>
+</html>
