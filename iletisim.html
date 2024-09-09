@@ -1,114 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-<title>ileti�im</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEZİ REHBERİ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: rgb(244, 244, 247);
+            background: radial-gradient(circle, rgba(244, 244, 247, 1) 0%, rgba(255, 243, 229, 1) 100%);
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e79f7e;
+        }
+
+        .topnav a {
+            float: left;
+            color: #fff7f1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #e67441;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #e67441;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background: rgb(250, 236, 219);
+            background: radial-gradient(circle, rgba(250, 236, 219, 0.9836) 28%, rgba(255, 247, 241, 1) 93%);
+        }
+
+        .contact-form {
+            background-image: url('resim/iletisim.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+            margin-top: 90px;
+        }
+
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #e67441;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #d65a35;
+        }
+    </style>
 </head>
 <body>
-<style>
- 
-body {
-  background-image: url('PICTURES/iletisim.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-body {font-family: "Lato", sans-serif;}
 
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
+<div class="topnav">
+    <a href="index .html">Ana Sayfa</a>
+    <a href="gezi.html">Gezilecek Yerler</a>
+    <a href="yemek.html">Yemek ve Restoranlar</a>
+    <a class="active" href="#iletisim">İletişim</a>
+</div>
 
 
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
+<div class="contact-form">
+    <form action="/action_page.php">
+        <label for="fname">Adınız:</label>
+        <input type="text" id="fname" name="fname">
 
-#ANASAYFA {background-color:rgb(14, 111, 214);}
-#GÜNDEM {background-color:green;}
-#EKONOMİ {background-color:rgb(248, 1, 59);}
-#MAGAZİN {background-color:orange;}
+        <label for="lname">Soyadınız:</label>
+        <input type="text" id="lname" name="lname">
 
+        <label for="number">Telefon Numaranız:</label>
+        <input type="text" id="number" name="number">
 
-#ANASAYFA {background-color:rgb(14, 111, 214);}
-#GÜNDEM {background-color:green;}
-#EKONOMİ {background-color:rgb(248, 1, 59);}
-#MAGAZİN {background-color:orange;}
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="10" cols="40"></textarea>
 
-</style>
+        <input type="submit" value="Gönder">
+    </form>
+</div>
 
-
-
-<button class="tablink" onclick="openCity('ANASAYFA', this, )"> <a href="index.html"></a>ANASAYFA</button>
-<button class="tablink" onclick="openCity('GÜNDEM', this, )"> <a href="topic.html">GÜNDEM</a> </button>
-<button class="tablink" onclick="openCity('EKONOMİ', this, )"><a href="economi.html"></a>EKONOMİ</a> </button>
-<button class="tablink" onclick="openCity('MAGAZİN', this, )"><a href="magazin.html"></a>MAGAZİN</a> </button>
-
-<script>
-function openCity(cityName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-
-}
-
-document.getElementById("defaultOpen").click();
-</script>
-
-<center>
-<br>
-<h1>Bize Ulaşın</h1>
-<p>Bize ulaştırmak istediğiniz mesajı aşağıdaki kutuya yazıp <a href="#"> Gönder </a> butonuna basınız.</p>
-<p> Yazacağınız mesaj sistemimiz tarafından ilgili kişiye yönlendirilecektir.
-
-Lütfen bülten gönderimlerini<b> xxxx@haberler.com</b> mail adresi üzerinden yapınız</p>
-<br>
-<h2>ADRES</h2>
-
-<p>Gezme Mah.  Anonim Sk. No:962, Kadıköy / İstanbul</p>
-<h2>TELEFON</h2>
-<p>+90 000 000 00 00</p>
-
-<br>
-
-<form action="/action_page.php">
-  <label for="fname">ADINIZ:</label><br>
-  <input type="text" id="fname" name="fname" width="60" height="30"><br><br>
-  <label for="lname">SOYADINIZ:</label><br>
- <input type="text" id="lname" name="lname" width="150px" height="30px"><br><br>
-<label for="number" id="number">TELEFON NUMARANIZ:</label><br>
-<input type="text" id="number" name="number"width="60" height="30"><br><br>
-<label for="MESAJ" id="MESAJ">MESAJINIZ:</label><br>
-<textarea rows="10" cols="40">
-
-</textarea><br><br>
-<input type="submit" value=" GÖNDER ">
-</center>
-</form> 
+<footer>
+    <p><b>HAZIRLAYAN: ELİF YİĞİT</b><br>
+    <a href="mailto:elifygit@outlook.com">elifygit@outlook.com</a></p>
+</footer>
 
 </body>
 </html>
