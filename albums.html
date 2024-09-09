@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim</title>
+    <title>Müzik</title>
     <style>
         body {
             margin: 0;
@@ -68,30 +68,34 @@
         h1, h2 {
             color: #ddd5d6;
         }
-        .contact-form {
-            padding: 34px;
-            max-width: 600px;
+        .album-cover {
+            max-width: 100%;
+            height: auto;
+            display: block;
             margin: 0 auto;
+        }
+        .album {
             background-color: rgb(69, 46, 46);
+            padding: 20px;
+            margin: 20px 0;
             border-radius: 10px;
-            margin-top: 40px;
+            color: #ddd5d6;
+
         }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
+        .album img {
+            width: 115px;
+            height: 115px;
+            border-radius: 10px;
+            
+        }
+        .album-details {
+            margin-top: 10px;
+        }
+        .album-details h3 {
+            margin: 0;
+        }
+        .album-details p {
             margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            background: #ddd5d6;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background: #ccc;
         }
         footer {
             background: rgb(113,0,27);
@@ -106,15 +110,25 @@
         footer p {
             margin: 0;
         }
+        a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+a:hover {
+  color: #f74949; 
+  text-decoration: none;
+}
+
     </style>
 </head>
 <body>
     <div class="topnav">
         <a href="index.html">ANASAYFA</a>
         <a href="about.html">HAKKIMIZDA</a>
-        <a href="albums.html">MÜZİK</a>
-        <a href="concerts.html">KONSERLER</a>
-        <a class="active" href="contact.html">İLETİŞİM</a>
+        <a class="active" href="albums.html">MÜZİK</a>
+        <a href="contact.html">İLETİŞİM</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="ARA.." name="search">
@@ -124,22 +138,37 @@
     </div>
 
     <div class="content">
-        <center><h1>İletişim</h1></center>
+        <center><h1>Albüm ve Projeler</h1></center>
         <hr>
-        <div class="contact-form">
-            <h2>Bize Ulaşın</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Adınız:</label>
-                <input type="text" id="name" name="name" required>
+        
+        <div class="album">
+            <img src="resim/album.jpg" alt="Albüm 1">
+            <div class="album-details">
+                <h3>Albüm 1: Geceye Yolculuk</h3>
+                <p>Çıkış Tarihi: 2022</p>
+                <p>Kısa Açıklama: Bu albüm, grubun en iyi parçalarını içeriyor ve dinleyicilere unutulmaz bir deneyim sunuyor.</p>
+                <p><a href="https://spotify.com" target="_blank">Dinle</a></p>
+            </div>
+        </div>
 
-                <label for="email">E-posta:</label>
-                <input type="email" id="email" name="email" required>
+        <div class="album">
+            <img src="resim/album-2.jpg" alt="Albüm 2">
+            <div class="album-details">
+                <h3>Albüm 2: Sonsuz Gece</h3>
+                <p>Çıkış Tarihi: 2021</p>
+                <p>Kısa Açıklama: Bu albüm, grubun duygusal ve yoğun parçalarını içeriyor. Dinleyicilere derin bir müzikal deneyim sunuyor.</p>
+                <p><a href="https://spotify.com" target="_blank">Dinle</a></p>
+            </div>
+        </div>
 
-                <label for="message">Mesajınız:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Gönder</button>
-            </form>
+        <div class="album">
+            <img src="resim/album.jpg" alt="Albüm 3">
+            <div class="album-details">
+                <h3>Albüm 3: Yeni Başlangıçlar</h3>
+                <p>Çıkış Tarihi: 2020</p>
+                <p>Kısa Açıklama: Bu albüm, grubun yeni yönlerini keşfettiği ve yenilikçi parçalar sunduğu bir çalışmadır.</p>
+                <p><a href="https://spotify.com" target="_blank">Dinle</a></p>
+            </div>
         </div>
     </div>
 

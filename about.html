@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAKKIMIZDA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: rgb(113,0,27);
+            background: linear-gradient(90deg, rgba(113,0,27,1) 0%, rgba(0,0,0,1) 51%, rgba(255,25,0,1) 100%);
+        }
+        .topnav {
+            overflow: hidden;
+            background: rgb(113,0,27);
+            background: linear-gradient(90deg, rgba(113,0,27,1) 0%, rgba(0,0,0,1) 51%, rgba(255,25,0,1) 100%);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .topnav a {
+            color: rgb(247, 231, 231);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 60px;
+        }
+        .topnav a:hover {
+            background: rgb(113,0,27);
+            background: linear-gradient(90deg, #71001b 0%, rgba(0,0,0,1) 51%, rgba(255,25,0,1) 100%);
+            color: white;
+        }
+        .topnav a.active {
+            background-color: #71001b;
+            color: white;
+        }
+        .topnav .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .topnav input[type=text] {
+            padding: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 8px;
+            height: 34px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        .topnav .search-container button {
+            padding: 8px 12px;
+            background: #ddd5d6;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 34px;
+        }
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        h1, h2 {
+            color: #ddd5d6;
+        }
+        .text-block {
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+            opacity: 1.5;
+            color: rgb(246, 241, 241);
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+        .row {
+            margin: 8px -16px;
+        }
+        .row, .row > .column {
+            padding: 8px;
+        }
+        .column {
+            float: left;
+            width: 25%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .content {
+            background-color: rgb(69, 46, 46);
+            padding: 10px;
+        }
+        footer {
+            background: rgb(113,0,27);
+            background: linear-gradient(90deg, rgba(113,0,27,1) 0%, rgba(0,0,0,1) 51%, rgba(255,25,0,1) 100%);
+            color: #ddd5d6;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">ANASAYFA</a>
+        <a class="active" href="about.html">HAKKIMIZDA</a>
+        <a href="albums.html">MÜZİK</a>
+        <a href="contact.html">İLETİŞİM</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="ARA.." name="search">
+                <button type="submit">ARA</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main">
+        <center><h1>Hakkımızda</h1></center>
+        <hr>
+        <img src="resim/rock-about.jpg" alt="Hakkımızda" class="about-image">
+        <br> <br>
+        <p style="color: #ddd5d6;">The Midnight Echoes, alternatif rock türünde enerjik ve duygusal bir müzik deneyimi sunuyor. 2015 yılında kurulan grup, etkileyici melodileri ve güçlü sözleriyle dinleyicilerini etkilemeye devam ediyor. "Eternal Night" albümü, grubun müzikal evrimini ve yaratıcı gücünü yansıtıyor.</p>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 The Midnight Echoes. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
