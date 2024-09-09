@@ -1,124 +1,157 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GEZİ REHBERİ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: rgb(244, 244, 247);
-            background: radial-gradient(circle, rgba(244, 244, 247, 1) 0%, rgba(255, 243, 229, 1) 100%);
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #e79f7e;
+            background-color: #061c59;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px; 
         }
 
         .topnav a {
-            float: left;
-            color: #fff7f1;
+            color: rgb(247, 231, 231);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+            line-height: 60px; 
         }
 
         .topnav a:hover {
-            background-color: #e67441;
-            color: black;
+            background-color: #a5c1e6;
+            color: white;
         }
 
         .topnav a.active {
-            background-color: #e67441;
+            background-color: #3c5393;
             color: white;
+        }
+
+        .topnav .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+        .topnav input[type=text] {
+            padding: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 8px;
+            height: 34px; 
+            width: 200px; 
+            box-sizing: border-box; 
+        }
+
+        .topnav .search-container button {
+            padding: 8px 12px;
+            background: #3c86ec;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 34px; 
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        h2 {
+            color: #1b1b71; 
+            margin-top: 105px;
+
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;       
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #061c59;
+            text-align: center;
+        }
+
+        p {
+            margin: 30px 0;
+              text-align: center;
+         }
+        
+
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .address {
+            flex: 1;
         }
 
         footer {
             text-align: center;
             padding: 3px;
-            background: rgb(250, 236, 219);
-            background: radial-gradient(circle, rgba(250, 236, 219, 0.9836) 28%, rgba(255, 247, 241, 1) 93%);
-        }
-
-        .contact-form {
-            background-image: url('resim/iletisim.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            padding: 20px;
-            margin-top: 90px;
-        }
-
-        .contact-form form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .contact-form input[type="text"], 
-        .contact-form textarea {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .contact-form input[type="submit"] {
-            background-color: #e67441;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .contact-form input[type="submit"]:hover {
-            background-color: #d65a35;
+            background: rgb(54,101,129);
+            background: radial-gradient(circle, rgba(54,101,129,1) 0%, rgba(202,212,218,1) 100%);
         }
     </style>
 </head>
 <body>
 
 <div class="topnav">
-    <a href="index .html">Ana Sayfa</a>
-    <a href="gezi.html">Gezilecek Yerler</a>
-    <a href="yemek.html">Yemek ve Restoranlar</a>
-    <a class="active" href="#iletisim">İletişim</a>
+    <a href="index.html">ANASAYFA</a>
+    <a href="tibbi-birimlerimiz.html">TIBBİ BİRİMLERİMİZ</a>
+    <a href="doktor.html">DOKTORLARIMIZ</a>
+    <a class="active" href="#iletisim">İLETİŞİM</a>
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="ARA.." name="search">
+            <button type="submit">ARA</button>
+        </form>
+    </div>
 </div>
 
-
-<div class="contact-form">
-    <form action="/action_page.php">
-        <label for="fname">Adınız:</label>
-        <input type="text" id="fname" name="fname">
-
-        <label for="lname">Soyadınız:</label>
-        <input type="text" id="lname" name="lname">
-
-        <label for="number">Telefon Numaranız:</label>
-        <input type="text" id="number" name="number">
-
-        <label for="message">Mesajınız:</label>
-        <textarea id="message" name="message" rows="10" cols="40"></textarea>
-
-        <input type="submit" value="Gönder">
-    </form>
+<div class="address">
+    <h2>SAĞLIK HASTANELERİ GENEL MÜDÜRLÜK</h2>
+    <hr/>
+    <p><span class="label">Adres:</span> Kızıkbakkalköy, Burası Tower, Gezilen Cd. No:852</p>
+    <p><span class="label">Telefon:</span> 0212 000 00 00</p>
+    <p><span class="label">Fax:</span> 0212 000 11 11</p>
+    <p><span class="label">E-posta:</span> <a href="mailto:saglik@gmail.com">saglik@gmail.com</a></p>
 </div>
+
+<br>
+
+<div class="address">
+    <h2>SAĞLIK HASTANELERİ KADIKÖY</h2>
+    <hr/>
+    <p><span class="label">Adres:</span> Kadıköy, Burası Tower, Gezilen Cd. No:852</p>
+    <p><span class="label">Telefon:</span> 0216 000 00 00</p>
+    <p><span class="label">Fax:</span> 0216 000 11 11</p>
+    <p><span class="label">E-posta:</span> <a href="mailto:saglik@gmail.com">saglik@gmail.com</a></p>
+</div>
+
+<br>
 
 <footer>
-    <p><b>HAZIRLAYAN: ELİF YİĞİT</b><br>
+    <p>HAZIRLAYAN: ELİF YİĞİT<br>
     <a href="mailto:elifygit@outlook.com">elifygit@outlook.com</a></p>
 </footer>
 
