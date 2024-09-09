@@ -1,50 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biggy Burger</title>
-  <link rel="stylesheet" href="main.css">
+    <title>HABERLER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#ANASAYFA {background-color:rgb(14, 111, 214);}
+#GÜNDEM {background-color:green;}
+#EKONOMİ {background-color:rgb(248, 1, 59);}
+#MAGAZİN {background-color:orange;}
+
+
+.footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="images/Logo.svg" alt="Logo" href="#">
-      <nav>
-        <ul class="header-menu">
-          <li> <img src="images/menü-icon.png"></li>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-          <li>Link</li>
-        </ul>
-      </nav>
-          <div class="icons">
-              <img src="images/basket.png" alt="basket" href="#">
-              <img src="images/button.png" alt="bell" href="#">
-  
-          </div>
-  
-    </div>
+
+
+<div id="ANASAYFA" class="tabcontent">
+  <h1>ANASAYFA</h1>
+  <p>Haberin Merkezi, Gerçeklerin Kapısı</p>
+  <p>
+    <img src="PICTURES/tv-studio.jpg" >
+</p>
+</div>
+
+<div id="GÜNDEM" class="tabcontent" > 
+
+  <h1>GÜNDEM </h1>
+  <p>Gündemin Öncüsü – Bugün Ne Oluyor?</p> 
+</div>
+
+<div id="EKONOMİ" class="tabcontent">
+  <h1>EKONOMİ</h1>
+  <p>Finansal Dünyanın Kalbine Yolculuk</p>
+</div>
+
+<div id="MAGAZİN" class="tabcontent">
+  <h1>MAGAZİN</h1>
+  <p>Sahne Arkası ve Daha Fazlası</p>
+</div>
+
+<button class="tablink" onclick="openCity('ANASAYFA', this, )" id="defaultOpen">ANASAYFA</button>
+<button class="tablink" onclick="openCity('GÜNDEM', this, )"> <a href="topic.html">GÜNDEM</a> </button>
+<button class="tablink" onclick="openCity('EKONOMİ', this, )"><a href="economi.html"></a>EKONOMİ</a> </button>
+<button class="tablink" onclick="openCity('MAGAZİN', this, )"><a href="magazin.html"></a>MAGAZİN</a> </button>
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+<table border="2">
+    <tr>
+       <th> SON DAKİKA</th>
+        <td> EN YENİ HABERLER BURADA</td>
+      </tr>
+
+    <tr>
+      <th>
+        <img src="PICTURES/haberler-icon.webp" >
+      </th>
+      <td> <i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus repellat distinctio nostrum quaerat recusandae sequi soluta id accusamus! Atque minus laboriosam officia porro in fugit qui modi eos dolorem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit ducimus et dolorem expedita eveniet consequuntur rem molestiae libero quaerat eos hic, dolore alias velit magni dicta? Quaerat, voluptate incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi atque quos vitae ullam. Mollitia a error consectetur quod dolor eaque quo laudantium illum totam. Eum fugit cum doloremque nisi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat consequatur quos qui saepe aliquid eos ullam odio eum. Aspernatur dolorum doloremque harum ea quas non est a excepturi at! </i>
+        <a href="topic.html" style="color: rgb(255, 0, 81);" class="btn btn-info next-o">HABERİN DEVAMI</a>
+    
+    </td>
+
+
+    </tr>
+    
+    <th>
+        <img src="PICTURES/newspaper.webp">
+      </th>
+      <td> <i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus repellat distinctio nostrum quaerat recusandae sequi soluta id accusamus! Atque minus laboriosam officia porro in fugit qui modi eos dolorem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit ducimus et dolorem expedita eveniet consequuntur rem molestiae libero quaerat eos hic, dolore alias velit magni dicta? Quaerat, voluptate incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi atque quos vitae ullam. Mollitia a error consectetur quod dolor eaque quo laudantium illum totam. Eum fugit cum doloremque nisi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quaerat consequatur quos qui saepe aliquid eos ullam odio eum. Aspernatur dolorum doloremque harum ea quas non est a excepturi at!
+    </i>
+    <a href="topic.html" style="color: rgb(255, 0, 81);" class="btn btn-info next-o">HABERİN DEVAMI</a> 
+ </td>
+ 
+    </tr>
+
+    <div class="footer">
+      <p>© 2024 Haberler. Tüm Hakları Saklıdır.</p>
+      <p><a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Şartları</a></p>
   </div>
 
-  <div class="container">
-    <div class="text-content">
-      <h1>Biggy Burger</h1>
-      <p>Loads of cheese layers drenched with caramelized onions and fresh veggies and mayo!</p>
-      <div class="price-section">
-        <button>+</button>
-        <span>$12.50</span>
-      </div>
-      <div class="delivery-time">
-        <img src="images/truck-icon 1.png">
-        <span>Est. Delivery</span>
-        <span>15 MIN</span>
-      </div>
-    </div>
-    <div class="image-content">
-      <img src="images/burger.png" alt="Biggy Burger">
-    </div>
-  </div>
 </body>
-</html>
+</html> 
